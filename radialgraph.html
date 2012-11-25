@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link type="text/css" href="css/base.css" rel="stylesheet" />
+<link type="text/css" href="css/RGraph.css" rel="stylesheet" />
+
+<script language="javascript" src="js/jit.js"></script>
+<script type="text/javascript" src="js/jscolor.js"></script>
+</head>
+
+<body onload="init();">
+<div id="container">
+<div id="left-container">
+	<form>
+		<fieldset>
+		<legend>Usuwanie wierzchołków</legend>
+		<label for="remove-list">Wybierz wierzchołek do usunięcia:</label>
+		<select id="remove-list"></select>
+		<button type="button" id="remove-nodes">Usuń wierzchołek</button>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+		<legend>Dodawanie wierzchołków</legend>
+		<label for="node-name">Podaj nazwę wierzchołka:</label>
+		<input id="node-name"></input>
+		<label for="parent-list">Wybierz wierzchołek-rodzica:</label>
+		<select id="parent-list"></select>
+		<button type="button" id="add-node">Dodaj wierzchołek</button>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Wybór palety</legend>
+			<label for="color-hex">Wybierz kolor wierzchołków:</label>
+			<input class="color" id="color-hex"/> 
+			<label for="font-hex">Wybierz kolor etykiet:</label>
+			<input class="color" id="font-hex"/> 
+			<button type="button" id="change-palette">Zmień paletę</button>
+		</fieldset>
+	</form>
+	
+</div>
+<div id="center-container">
+    <div id="infovis"></div>    
+</div>
+
+</div>
+<script language="javascript" src="js/data.js"></script>
+<script language="javascript" src="js/conf.js"></script>
+</body>
+</html>
