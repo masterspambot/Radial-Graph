@@ -1,1 +1,0 @@
-http://ijinpl.github.com/Radial-Graph/
